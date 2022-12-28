@@ -9,7 +9,7 @@ let wordNot=sentence.search("not")
 let wordBad =sentence.search("bad")
 // If the word “bad” comes after the word “not”, you should replace the whole “not…bad” substring with “good”, then console.log the result.
 if (wordBad>wordNot) {
-const str=sentence.replace(sentence.substring(wordNot,ordBad+3),"good")
+const str=sentence.replace(sentence.substring(wordNot,wordBad+3),"good")
 console.log(str)
 // If the word “bad” does not come after “not” or the words are not in the sentence, console.log the original sentence.
 } else { console.log("the original sentence")
